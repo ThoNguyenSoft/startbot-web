@@ -1,1 +1,1 @@
-# ai-scrypto
+# crypto-ai
