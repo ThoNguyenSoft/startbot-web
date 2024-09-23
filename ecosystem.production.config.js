@@ -19,9 +19,6 @@ module.exports = {
       env: {
         ...loadEnv('.env'),
         APP_ENV: 'production',
-        NEXT_PUBLIC_SUPABASE_URL: 'https://supabase.stockai.vn',
-        NEXT_PUBLIC_API_URL: 'https://api.stockai.vn',
-        NEXT_PUBLIC_SOCKET_URL: 'wss://ws.stockai.vn',
         PORT: 9103
       }
     }

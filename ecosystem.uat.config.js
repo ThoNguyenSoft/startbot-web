@@ -12,16 +12,14 @@ const loadEnv = path => {
 module.exports = {
   apps: [
     {
-      name: 'uat-stock-ai-web',
+      name: 'uat-crypto-ai-web',
       script: 'npm',
       args: 'run start:deploy',
       watch: true,
       env: {
+        ...loadEnv('.env'),
         APP_ENV: 'uat',
-        NEXT_PUBLIC_SUPABASE_URL: 'https://supabase.stockai.vn',
-        NEXT_PUBLIC_API_URL: 'https://uat-api.stockai.vn',
-        NEXT_PUBLIC_SOCKET_URL: 'wss://uat-ws.stockai.vn',
-        PORT: 9101
+        PORT: 9103
       }
     }
   ]
